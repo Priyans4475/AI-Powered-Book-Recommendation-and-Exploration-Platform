@@ -1,157 +1,41 @@
 ﻿# AI-Powered-Book-Recommendation-and-Exploration-Platform
+# 📚 AI-Powered Book Recommendation & Exploration Platform
 
-📚 AI-Powered Book Recommendation System
+A **full-stack machine learning web application** that combines **content-based book recommendation**, **live auto-suggest search**, and **real-time Google Books integration** to help users discover and explore books intelligently.
 
-An intelligent full-stack web application that combines machine learning–based book recommendations with real-time Google Books exploration.
-The platform allows users to discover books through content-based filtering, live search suggestions, and detailed summary pages.
+---
 
-🚀 Features
-⭐ AI Book Recommendation
+## 🚀 Key Features
 
-Content-based filtering using TF-IDF and Cosine Similarity
+- ⭐ **Content-Based Recommendation** using **TF-IDF** and **Cosine Similarity**
+- 🔎 **Live Auto-Suggest Search** with dropdown suggestions
+- 📖 **Google Books API Integration** for real-time book details & summaries
+- 🎨 **Premium Blog-Style Summary Layout**
+- 🔗 Clickable books redirect to original **Google Books preview**
 
-Suggests similar books based on title, author, publisher, and publication year
+---
 
-FastAPI backend for scalable ML inference
+## 🧠 Tech Stack
 
-🔎 Smart Search
+**Backend:** Python, FastAPI, Pandas, Scikit-learn  
+**Frontend:** React.js, React Router, Axios  
+**ML:** TF-IDF Vectorizer, Cosine Similarity  
+**API:** Google Books API
 
-Live auto-suggest dropdown
+---
 
-Partial title matching
+## ⚙️ Setup
 
-Smooth navigation between pages
-
-📖 Book Details & Summary
-
-Fetches real-time book data from Google Books API
-
-Generates concise multi-line summaries
-
-Premium blog-style reading layout
-
-🔥 Explore & Popular Books
-
-Displays trending/popular books based on dataset ratings
-
-Clickable books redirect to original Google Books preview
-
-🧠 Tech Stack
-Backend
-
-Python
-
-FastAPI
-
-Pandas
-
-Scikit-learn
-
-TF-IDF Vectorizer
-
-Cosine Similarity
-
-Google Books API
-
-Frontend
-
-React.js
-
-React Router
-
-Axios
-
-Modern CSS (Dark UI)
-
-🏗️ Project Architecture
-backend/
- ├── app.py
- ├── routes/
- │     ├── recommender.py
- │     ├── google_api.py
- │     └── popular.py
-
-frontend/
- ├── pages/
- │     ├── Home.jsx
- │     ├── Recommend.jsx
- │     └── Details.jsx
-
-⚙️ Installation & Setup
-1️⃣ Clone Repository
-git clone https://github.com/yourusername/yourrepo.git
-cd yourrepo
-
-2️⃣ Backend Setup
+### Backend
+```bash
 cd backend
 pip install -r requirements.txt
-
-
-Create .env file:
-
-GOOGLE_API_KEY=your_api_key_here
-
-
-Run backend:
-
 uvicorn app:app --reload
 
+GOOGLE_API_KEY=your_api_key
 
-Backend runs at:
-
-http://localhost:8000
-
-3️⃣ Frontend Setup
 cd frontend
 npm install
 npm run dev
 
 
-Frontend runs at:
-
-http://localhost:5173
-
-🔗 API Endpoints
-Endpoint	Description
-/top-books	Fetch popular books
-/search/{query}	Auto-suggest search
-/recommend/{book}	Content-based recommendations
-/google-search/{query}	Google Books details & summaries
-🧪 Machine Learning Approach
-
-Built a content-based recommender using:
-
-TF-IDF vectorization
-
-Cosine similarity matrix
-
-Book metadata combined into a unified text feature space.
-
-Similarity scores used to rank recommendations.
-
-🎨 UI Highlights
-
-Premium blog-style summary layout
-
-Smooth navigation with React Router
-
-Clickable book previews
-
-Dark themed modern design
-
-🔮 Future Improvements
-
-Hybrid recommender (Content + Collaborative Filtering)
-
-Semantic search with embeddings
-
-User authentication & saved favorites
-
-Pagination & infinite scroll
-
-Deployment with Docker
-
-👨‍💻 Author
-
-Priyanshu Kumar
-M.Tech — Mathematics & Computing, IIT Patna
